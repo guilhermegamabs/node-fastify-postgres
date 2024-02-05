@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Hello World",
+    "description":  "Vídeo 01",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/088605a7-7275-4659-b8e5-bd58c3208c22
+Content-Type: application/json
+
+{
+    "title": "Hello World 3",
+    "description": "Vídeo 02",
+    "duration": 250
+}
+
+###
+
+DELETE http://localhost:3333/videos/658785bf-080b-4927-83ac-b7e0a0b12582
