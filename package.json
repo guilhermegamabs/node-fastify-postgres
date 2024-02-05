@@ -12,5 +12,8 @@
   "devDependencies": {
     "nodemon": "^3.0.3"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "fastify": "^4.26.0"
+  }
 }

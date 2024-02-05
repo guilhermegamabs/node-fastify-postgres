@@ -1,9 +1,25 @@
-import { createServer } from 'node:http'
+import { fastify } from 'fastify';
+import { DatabaseMemory } from './database-memory';
 
-const server = createServer((request, response) => {
-    response.write('Hello World!')
+const server = fastify();
+const PORT = 3333;
 
-    return response.end();
+server.get("/", () => {
+    return 'Hello World!';
 });
 
-server.listen(3333);
+server.post('/videos', () => {
+    return 'Hello';
+});
+
+server.put('/videos/:id', () => {
+    return 'Hello Node.js';
+});
+
+server.delete('/videos/:id', () => {
+    return 'Hello Node.js';
+})
+
+server.listen({
+    port: PORT,
+});
