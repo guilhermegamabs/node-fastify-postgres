@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^16.4.1",
     "nodemon": "^3.0.3"
   },
   "type": "module",
   "dependencies": {
-    "fastify": "^4.26.0"
+    "fastify": "^4.26.0",
+    "postgres": "^3.4.3"
   }
 }
